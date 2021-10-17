@@ -1,4 +1,5 @@
 body {
+    /* Alignment */
     display: grid;
     grid-template-rows: 20% 80%;
     grid-template-columns: 10% 90%;
@@ -8,21 +9,26 @@ body {
 }
 
 .side-action-box {
+    /* Alignment */
     grid-column: 1;
     grid-row: 1/3;
     background-color: yellow;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: flex-end;
 }
 
 .top-text {
+    /* Alignment */
     grid-column: 2;
     grid-row: 1;
     margin: 0;
     text-align: center;
+    background-color: darkred;
+    justify-content: center;
 }
 
 .cards {
+    /* Alignment */
     margin: 0;
     grid-column: 2;
     grid-row: 2;
@@ -30,15 +36,23 @@ body {
     text-align: center;
 }
 h1 {
-    background-color: blue;
+    /* Alignment */
     margin: 0;
 }
 
 h2 {
-    background-color: crimson;
+    /* Alignment */
     margin: 0;
 }
 
 ul {
+    /* Alignment */
     background-color: darkcyan;
+}
+
+.side-action-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
