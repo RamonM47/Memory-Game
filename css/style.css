@@ -1,0 +1,30 @@
+body {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 20% 80%;
+    min-height: 100vh;
+}
+
+nav {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background-color: yellow;
+}
+
+.welcome  {
+    grid-column: 2/2;
+    grid-row: 2/4;
+    margin: 0;
+}
+
+.instructon {
+    margin: 0;
+    grid-column: 2/2;
+}
+h1 {
+    background-color: blue;
+}
+
+h2 {
+    background-color: crimson;
+}
