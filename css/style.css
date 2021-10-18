@@ -50,16 +50,9 @@ body {
     min-width: 500px;
     min-height: 250px;
 }
-h1 {
-    /* Alignment */
-}
 
-h2 {
-    /* Alignment */
-}
-
-
-#card {
+.card {
+    /* alignment */
     display: flex;
     width: 15%;
     height: 40%;
@@ -68,7 +61,39 @@ h2 {
     margin-right: 1%;
 }
 
-#card:hover {
+.card:hover {
+    /* functionality */
     border: 5px solid blue;
     box-sizing: border-box;
+}
+
+.img0 {
+    background-image: url('https://i.ibb.co/bb3gFcT/export-1.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.img1 {
+    background-image: url('https://i.ibb.co/ctZMtZR/export-2.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.img2 {
+    background-image: url('https://i.ibb.co/MsSZp12/Untitled-Artwork-2.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.img3 {
+    background-image: url('https://i.ibb.co/C0TLhvS/export-1-1.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.img4 {
+    background-image: url('https://i.ibb.co/ZTsHNxL/Layer-6.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
 }
