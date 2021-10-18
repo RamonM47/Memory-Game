@@ -61,9 +61,9 @@ body {
     margin-right: 1%;
 }
 
-.card:hover {
+.face-down:hover {
     /* functionality */
-    border: 5px solid blue;
+    border: 5px solid rgb(48, 113, 133);
     box-sizing: border-box;
 }
 
@@ -96,4 +96,8 @@ body {
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+}
+
+.face-down {
+    background-image: url('https://i.ibb.co/0X2Z2sm/Untitled-Artwork.png');
 }
