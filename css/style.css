@@ -72,32 +72,38 @@ body {
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+    border-radius: 10px;
 }
 .img1 {
     background-image: url('https://i.ibb.co/ctZMtZR/export-2.png');
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+    border-radius: 10px;
 }
 .img2 {
     background-image: url('https://i.ibb.co/MsSZp12/Untitled-Artwork-2.png');
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+    border-radius: 10px;
 }
 .img3 {
     background-image: url('https://i.ibb.co/C0TLhvS/export-1-1.png');
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+    border-radius: 10px;
 }
 .img4 {
     background-image: url('https://i.ibb.co/ZTsHNxL/Layer-6.png');
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+    border-radius: 10px;
 }
 
 .face-down {
     background-image: url('https://i.ibb.co/0X2Z2sm/Untitled-Artwork.png');
+    border-radius: 10px;
 }
