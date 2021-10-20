@@ -1,7 +1,6 @@
 /*-------------------------------- Constants --------------------------------*/
-// let card = document.getElementsByClassName('card');
-
-// let cards = [card]
+const squares = document.querySelectorAll('.row > .card')
+console.log(squares)
 
 // let clickedCard = null;
 
@@ -24,12 +23,12 @@ function handleClick() {
     console.log(cardValues)
 }
 
-// function onCardClick(e) {
-//     const target = e.currentTarget;
+function onCardClick(e) {
+    const target = e.currentTarget;
 
-//     target.className = target.className
-//         .replace('face-down', '')
-//     target.className += 'done';
+    target.className = target.className
+        .replace('face-down', '')
+    target.className += 'done';
 
 //     if (!clickedCard) {
 //         clickedCard = target;
@@ -51,4 +50,4 @@ function handleClick() {
 //             console.log('no');
 //         }
 //     }
-// }
+}
