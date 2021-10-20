@@ -1,5 +1,6 @@
 let clickedCard = null;
 let preventClick = false;
+let combosFound = 0
 
 function onCardClick(e) {
     const target = e.currentTarget;
@@ -24,6 +25,7 @@ function onCardClick(e) {
         if (
             clickedCard.getAttribute('class') !==
             target.getAttribute('class')
+            
         ) {
             preventClick = true;
             setTimeout(() => {
@@ -37,7 +39,11 @@ function onCardClick(e) {
                 preventClick = false;
             }, 500);
         } else {
+            combosFound++;
             clickedCard = null;
+            if (combosFound === 5) {
+                alert('you win')
+            }
         }
     }
 }
@@ -53,13 +59,13 @@ function onCardClick(e) {
 
 /*------------------------ Cached Element References ------------------------*/
 
-// const cardValues = document.querySelectorAll('section > div')
+const cardValues = document.querySelectorAll('section > div')
 
-// const message = document.querySelector('#instruction')
+const message = document.querySelector('#instruction')
 
-// const play = document.querySelector('#play')
+const play = document.querySelector('#play')
 
-// const reShuffle = document.querySelector('#reShuffle')
+const reShuffle = document.querySelector('#reShuffle')
 
 /*----------------------------- Event Listeners -----------------------------*/
 
