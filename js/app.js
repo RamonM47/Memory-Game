@@ -1,46 +1,45 @@
-let clickedCard = null; 
+let clickedCard = null;
 let preventClick = false;
 
 function onCardClick(e) {
     const target = e.currentTarget;
 
     if (
-    preventClick ||
-    target === clickedCard ||
-    target.className.includes('done')
+        preventClick ||
+        target === clickedCard ||
+        target.className.includes('done')
     ) {
-    return;
+        return;
     }
 
-    target.className = target.className.replace('face-down', '');
+    target.className = target.className
+        .replace('face-down', '');
     target.className += 'done';
 
 
+    if (!clickedCard) {
+        clickedCard = target;
+    } else if (clickedCard) {
 
-if (!clickedCard) {
-    clickedCard = target;
-} else if (clickedCard) {
-
-    if (
-        clickedCard.getAttribute('class') !==
-        target.getAttribute('class')
-    ) {
-        preventClick = true;
-        setTimeout(() => {
-            clickedCard.className =
-                clickedCard.className.replace('done', '') +
-                'face-down';
-            target.className =
-                target.className.replace('done', '') +
-                'face-down';
+        if (
+            clickedCard.getAttribute('class') !==
+            target.getAttribute('class')
+        ) {
+            preventClick = true;
+            setTimeout(() => {
+                clickedCard.className =
+                    clickedCard.className.replace('done', '') +
+                    'face-down';
+                target.className =
+                    target.className.replace('done', '') +
+                    'face-down';
+                clickedCard = null;
+                preventClick = false;
+            }, 500);
+        } else {
             clickedCard = null;
-            preventClick = false;
-        }, 1000);
-        console.log('no');
-    } else {
-        clickedCard = null;
+        }
     }
-
 }
 /*-------------------------------- Constants --------------------------------*/
 // const squares = document.querySelectorAll('.row > .card')
@@ -127,8 +126,7 @@ if (!clickedCard) {
 // }
 
 // function render() {
-}
-
+//}
 // function shuffle(cardValues) {
 //     cardValues.sort(() => Math.random() - 0.5);
 //     console.log(shuffle)
