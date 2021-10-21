@@ -1,9 +1,5 @@
 
 /*-------------------------------- Constants --------------------------------*/
-// const squares = document.querySelectorAll('.row > .card')
-// console.log(squares)
-
-// let clickedCard = null;
 
 /*---------------------------- Variables (state) ----------------------------*/
 
@@ -17,7 +13,7 @@ const reShuffle = document.querySelector('#reShuffle')
 
 /*----------------------------- Event Listeners -----------------------------*/
 
-
+/*-------------------------------- Functions --------------------------------*/
 
 
 function onCardClick(e) {
@@ -70,5 +66,7 @@ function onCardClick(e) {
 }
 
 function Refresh(){
-    location.reload()
+    location.reload();
+    document.querySelector('.instruction').innerHTML = ("Welcome Back!");
 }
+
