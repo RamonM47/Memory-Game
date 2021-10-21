@@ -10,6 +10,7 @@ Sneak Peek:
 ![](https://i.ibb.co/k2QyYDP/Screenshot-from-2021-10-21-12-17-40.png)
 
 Next steps/ improvements:
+
 This code is pretty stiff and has alot of hard coded elements that make it hard to manipulate the way i want to. Next time will use more dom manipulation.
 Missing features:
 
