@@ -3,9 +3,11 @@
 
 # Getting Started;
 
-#### The Game begins as soon as the browser opens, once you click the first card, it is your job to find where the matching pair is!
+The Game begins as soon as the browser opens, once you click the first card, it is your job to find where the matching pair is!
 
-#### This game was constructed using HTML CSS and JavaScript. 
+# Game info:
+
+This game was constructed using HTML CSS and JavaScript. 
 
 # Sneak Peek:
 ![](https://i.ibb.co/k2QyYDP/Screenshot-from-2021-10-21-12-17-40.png)
