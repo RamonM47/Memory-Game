@@ -12,7 +12,11 @@ Sneak Peek:
 Next steps/ improvements:
 This code is pretty stiff and has alot of hard coded elements that make it hard to manipulate the way i want to. Next time will use more dom manipulation.
 Missing features:
+
 Cards facing up for a short time in the beginning.
+
 A different message upon re-start.
+
 A shuffle function that would shuffle the cards.
+
 Animations of the cards flipping.
