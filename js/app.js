@@ -67,6 +67,4 @@ function onCardClick(e) {
 
 function Refresh(){
     location.reload();
-    document.querySelector('.instruction').innerHTML = ("Welcome Back!");
 }
-
