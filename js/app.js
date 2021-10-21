@@ -1,52 +1,4 @@
-let clickedCard = null;
-let preventClick = false;
-let combosFound = 0
 
-function onCardClick(e) {
-    const target = e.currentTarget;
-
-    if (
-        preventClick ||
-        target === clickedCard ||
-        target.className.includes('done')
-    ) {
-        return;
-    }
-
-    target.className = target.className
-        .replace('face-down', '');
-    target.className += 'done';
-
-
-    if (!clickedCard) {
-        clickedCard = target;
-    } else if (clickedCard) {
-
-        if (
-            clickedCard.getAttribute('class') !==
-            target.getAttribute('class')
-            
-        ) {
-            preventClick = true;
-            setTimeout(() => {
-                clickedCard.className =
-                    clickedCard.className.replace('done', '') +
-                    'face-down';
-                target.className =
-                    target.className.replace('done', '') +
-                    'face-down';
-                clickedCard = null;
-                preventClick = false;
-            }, 500);
-        } else {
-            combosFound++;
-            clickedCard = null;
-            if (combosFound === 5) {
-                alert('you win')
-            }
-        }
-    }
-}
 /*-------------------------------- Constants --------------------------------*/
 // const squares = document.querySelectorAll('.row > .card')
 // console.log(squares)
@@ -55,93 +7,68 @@ function onCardClick(e) {
 
 /*---------------------------- Variables (state) ----------------------------*/
 
-// let table, winner
+let clickedCard = null;
+let preventClick = false;
+let combosFound = 0
 
 /*------------------------ Cached Element References ------------------------*/
-
-const cardValues = document.querySelectorAll('section > div')
-
-const message = document.querySelector('#instruction')
-
-const play = document.querySelector('#play')
 
 const reShuffle = document.querySelector('#reShuffle')
 
 /*----------------------------- Event Listeners -----------------------------*/
 
-// cardValues.forEach((card) => {
-//     card.addEventListener('click', handleClick)
-//     console.log(card)
-// })
-
-// reShuffle.addEventListener('click', init)
-
-/*-------------------------------- Functions --------------------------------*/
-
-// function handleClick() {
-//     console.log(cardValues)
-// }
-
-//--------------------------------------------
-
-// function onCardClick(e) {
-//     const target = e.currentTarget;
 
 
-//--------------------------------------------
 
-    // target.className = target.className
-    //     .replace('face-down', '')
-    // target.className += 'done';
+function onCardClick(e) {
+    const target = e.currentTarget;
 
-//     if (!clickedCard) {
-//         clickedCard = target;
-//     } else if (clickedCard) {
+    if (
+        preventClick ||
+        target === clickedCard ||
+        target.className.includes('flipped')
+    ) {
+        return;
+    }
 
-//--------------------------------------------
+    target.className = target.className
+        .replace('face-down', '');
+    target.className += 'flipped';
 
-//         if (
-//             clickedCard.getAttribute('class') ===
-//             target.getAttribute('class')) {
 
-//         } else {
+    if (!clickedCard) {
+        clickedCard = target;
+        document.querySelector('.instruction').innerHTML = ("Keep at it!");
+    } else if (clickedCard) {
 
-//--------------------------------------------
+        if (
+            clickedCard.getAttribute('class') !==
+            target.getAttribute('class')
+                
+            
+        ) {
+            preventClick = true;
+            setTimeout(() => {
+                clickedCard.className =
+                    clickedCard.className.replace('flipped', '') +
+                    'face-down';
+                target.className =
+                    target.className.replace('flipped', '') +
+                    'face-down';
+                clickedCard = null;
+                preventClick = false;
+                document.querySelector('.instruction').innerHTML = ("Oof try again!");
+            }, 500);
+        } else {
+            combosFound++;
+            clickedCard = null;
+            if (combosFound === 5) {
+                document.querySelector('.instruction').innerHTML = ("You Win!! Hit 'Re-start to play again!!");
+            }
+        }
+    }
+}
 
-//             setTimeout(() => {
-//                 clickedCard.className =
-//                     clickedCard.className.replace('done', '') +
-//                     'face-down';
-//                 target.className =
-//                     target.className.replace('done', '') +
-//                     'face-down';
-//             }, 500);
-
-//--------------------------------------------
-
-//             console.log('no');
-//         }
-//     }
-
-// init ()
-
-// function init() {
-//     table = [null, null, null, null, null]
-
-//     render()
-// }
-
-// function render() {
-//}
-// function shuffle(cardValues) {
-//     cardValues.sort(() => Math.random() - 0.5);
-//     console.log(shuffle)
-// }
-
-// function handleClick(evt) {
-//     let cardIdx = parseInt(evt.target.id.replace('face-down', ''))
-
-//     if (table[cardIdx] || winner) {
-//         return
-//     }
-// table[sqIdx] = tufunction onCardClick(e) {
+function Refresh(){
+    location.reload()
+}

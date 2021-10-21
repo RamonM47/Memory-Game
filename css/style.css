@@ -1,5 +1,4 @@
 body {
-    /* Alignment */
     display: grid;
     grid-template-rows: 20% 60%;
     grid-template-columns: 20% 80% 20%;
@@ -7,34 +6,37 @@ body {
     grid-template-rows: auto 1fr auto;
     grid-template-columns: auto 1fr auto ;
     gap: 20px;
-    background-color: mediumorchid;
+    background-image: url('https://i.ibb.co/m48143w/export-1.png');
 }
 
 .side-action-box {
-    /* Alignment */
     grid-column: 1;
-    grid-row: 2/3;
-    background-color: yellow;
+    grid-row: 2;
+    background-color: teal;
     justify-content: space-evenly;
     align-items: flex-end;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    border: 5px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
 .top-text {
-    /* Alignment */
     grid-column: 2;
     grid-row: 1;
     margin: 0;
     text-align: center;
-    background-color: maroon;
+    background-color: teal;
     align-items: center;
+    border: 5px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
 .row {
-    /* Alignment */
     grid-column: 2;
     grid-row: 2/3;
     justify-content: center;
@@ -46,13 +48,15 @@ body {
     margin-right: 10%;
     margin-top: 2%;
     margin-bottom: 2%;
-    background-color: darkcyan;
+    background-color: pink;
     min-width: 500px;
     min-height: 250px;
+    border-radius: 10px;
+    border: 5px solid rgb(0, 0, 0);
+    box-sizing: border-box;
 }
 
 .card {
-    /* alignment */
     display: flex;
     width: 15%;
     height: 40%;
@@ -62,9 +66,9 @@ body {
 }
 
 .face-down:hover {
-    /* functionality */
-    border: 5px solid rgb(48, 113, 133);
+    border: 5px solid rgb(255, 255, 255);
     box-sizing: border-box;
+    
 }
 
 .img0 {
@@ -73,6 +77,8 @@ body {
     background-size:cover;
     background-position: center;
     border-radius: 10px;
+    border: 5px solid rgb(0, 0, 0);
+    box-sizing: border-box;
 }
 .img1 {
     background-image: url('https://i.ibb.co/ctZMtZR/export-2.png');
@@ -80,6 +86,8 @@ body {
     background-size:cover;
     background-position: center;
     border-radius: 10px;
+    border: 5px solid rgb(0, 0, 0);
+    box-sizing: border-box;
 }
 .img2 {
     background-image: url('https://i.ibb.co/MsSZp12/Untitled-Artwork-2.png');
@@ -87,6 +95,8 @@ body {
     background-size:cover;
     background-position: center;
     border-radius: 10px;
+    border: 5px solid rgb(0, 0, 0);
+    box-sizing: border-box;
 }
 .img3 {
     background-image: url('https://i.ibb.co/C0TLhvS/export-1-1.png');
@@ -94,6 +104,8 @@ body {
     background-size:cover;
     background-position: center;
     border-radius: 10px;
+    border: 5px solid rgb(0, 0, 0);
+    box-sizing: border-box;
 }
 .img4 {
     background-image: url('https://i.ibb.co/ZTsHNxL/Layer-6.png');
@@ -101,9 +113,20 @@ body {
     background-size:cover;
     background-position: center;
     border-radius: 10px;
+    border: 5px solid rgb(0, 0, 0);
+    box-sizing: border-box;
 }
 
 .face-down {
     background-image: url('https://i.ibb.co/0X2Z2sm/Untitled-Artwork.png');
     border-radius: 10px;
+    box-shadow: 5px solid rgb(245, 126, 126);
+    box-sizing: border-box;
+}
+
+.Refresh {
+    padding: 50px;
+    background-color: tomato;
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
