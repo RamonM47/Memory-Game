@@ -16,7 +16,7 @@ This game was constructed using
 ![](https://i.ibb.co/zxd2spw/Screenshot-from-2021-10-15-13-11-47.png)
 
 # Sneak Peek:
-![](https://i.ibb.co/k2QyYDP/Screenshot-from-2021-10-21-12-17-40.png)
+![](https://i.ibb.co/LQrKq5K/Screenshot-from-2021-10-22-10-17-02.png)
 
 # Next steps/ improvements:
 
