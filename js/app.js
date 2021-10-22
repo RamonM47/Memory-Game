@@ -68,3 +68,4 @@ function onCardClick(e) {
 function Refresh(){
     location.reload();
 }
+

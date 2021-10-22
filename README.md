@@ -7,7 +7,13 @@ The Game begins as soon as the browser opens, once you click the first card, it 
 
 # Game info:
 
-This game was constructed using HTML CSS and JavaScript. 
+This game was constructed using
+- HTML 
+- CSS 
+- JavaScript
+
+# Wireframe:
+![](https://i.ibb.co/zxd2spw/Screenshot-from-2021-10-15-13-11-47.png)
 
 # Sneak Peek:
 ![](https://i.ibb.co/k2QyYDP/Screenshot-from-2021-10-21-12-17-40.png)
