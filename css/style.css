@@ -6,13 +6,13 @@ body {
     grid-template-rows: auto 1fr auto;
     grid-template-columns: auto 1fr auto ;
     gap: 20px;
-    background-image: url('https://i.ibb.co/m48143w/export-1.png');
+    background-image: url('https://i.ibb.co/Vxv7V0v/SLAB.png');
 }
 
 .side-action-box {
     grid-column: 1;
     grid-row: 2;
-    background-color: rgb(0, 179, 179);
+    background-color: rgb(0, 40, 100);
     justify-content: space-evenly;
     align-items: flex-end;
     display: flex;
@@ -29,11 +29,11 @@ body {
     grid-row: 1;
     margin: 0;
     text-align: center;
-    background-color: rgb(0, 179, 179);
+    background-color: rgb(0, 40, 100);
     align-items: center;
     border: 5px solid rgb(0, 0, 0);
     border-radius: 10px;
-    color: black
+    color: white
 }
 
 .row {
@@ -72,7 +72,7 @@ body {
 }
 
 .img0 {
-    background-image: url('https://i.ibb.co/bb3gFcT/export-1.png');
+    background-image: url('https://i.ibb.co/Gx20Myg/YERE5413.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -81,7 +81,7 @@ body {
     box-sizing: border-box;
 }
 .img1 {
-    background-image: url('https://i.ibb.co/ctZMtZR/export-2.png');
+    background-image: url('https://i.ibb.co/wyxmjkk/export-2.png');
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -90,7 +90,7 @@ body {
     box-sizing: border-box;
 }
 .img2 {
-    background-image: url('https://i.ibb.co/MsSZp12/Untitled-Artwork-2.png');
+    background-image: url('https://i.ibb.co/gm0C1mx/20210815-235124.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -99,7 +99,7 @@ body {
     box-sizing: border-box;
 }
 .img3 {
-    background-image: url('https://i.ibb.co/C0TLhvS/export-1-1.png');
+    background-image: url('https://i.ibb.co/GRwB2Lw/export.png');
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -108,7 +108,7 @@ body {
     box-sizing: border-box;
 }
 .img4 {
-    background-image: url('https://i.ibb.co/ZTsHNxL/Layer-6.png');
+    background-image: url('https://i.ibb.co/k4rRqZV/QOLM0744.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -118,7 +118,7 @@ body {
 }
 
 .face-down {
-    background-image: url('https://i.ibb.co/0X2Z2sm/Untitled-Artwork.png');
+    background-image: url('https://i.ibb.co/k1WcmFR/Untitled-Artwork.jpg');
     border-radius: 10px;
     box-sizing: border-box;
     box-shadow: 5px solid rgb(245, 126, 126);
