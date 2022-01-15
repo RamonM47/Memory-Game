@@ -17,7 +17,7 @@ This game was constructed using
 
 # Sneak Peek:
 ![](https://i.ibb.co/k2QyYDP/Screenshot-from-2021-10-21-12-17-40.png)
-link to game: [memory-game-1](https://memory-game-1.surge.sh/)
+link to game: [memory-game-2.0](https://memory-game-2.surge.sh/)
 
 # Next steps/ improvements:
 
